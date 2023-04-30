@@ -1,0 +1,86 @@
+body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #FFFFFF;
+  margin: 0;
+}
+
+.navigation {
+  position: fixed;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  color: black;
+  align-items: center;
+}
+
+@media all and (max-width: 1500px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navigation a { 
+    align-items: center;
+  }
+}
+
+
+#InfoPanel {
+  min-width: 150px;
+  flex-basis: 50%;
+  text-align: center;
+  background-color: white;
+}
+
+#StateChanger {
+  min-width: 150px;
+  flex-basis: 50%;
+  text-align: center;
+  justify-content: center;
+  vertical-align: middle;
+  background-color: black;
+}
+
+.title {
+  text-align: center;
+  width: 100%;
+  vertical-align: middle;
+  line-height: 43px;
+}
+
+h3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 0.8em;
+  font-weight: 100; 
+  margin: 0;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+p {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  font-weight: 100;
+  margin: 0;
+}
+
+.image {
+  width: 100%;
+}
+
+.sketch {
+  padding-top: 40px;
+  max-width: 400px;
+  margin: auto;
+}
