@@ -9,15 +9,34 @@
 <!--  <div id="loading" class="panel">
    <img id="logo" src="img/logo.png"></img>
  </div> -->
- </div>
-<!--  <div class="panel" id="wedding">
-   <img class="sketch" src="img/wedding.png"></img>
- </div> -->
  <div class="panel" id="party">
    <img class="sketch" src="img/party.png"></img>
  </div>
+ <div class="panel" id="wedding">
+    <div id="ff-compose"></div>
+<script async defer src="https://formfacade.com/include/116297907885606959139/form/1FAIpQLSc2ot_ZcPSfrFppQj3mC1UD8c_Gs89w4eH0gu2r-w8JoQXVPg/classic.js?div=ff-compose"></script>
+ </div>
+
+<script>
+// Get the root element
+var r = document.querySelector(':root');
+// var l = document.getElementsByClassName("ff-powered-img")[0];
+// console.log(l);
+
+function myFunction_get() {
+  var rs = getComputedStyle(r);
+  alert("The value of --ff-font-color is: " + rs.getPropertyValue('--ff-font-color'));
+}
+
+function myFunction_set() {
+  r.style.setProperty('--ff-font-color', 'white');
+  r.style.setProperty('--ff-primary-color', '#404040');
+};
+
+myFunction_set();
+
+</script>
+
+
 </body>
-<!-- <script type="text/javascript">
-  $("#loading").delay(3000).fadeOut(2000)
-</script> -->
 </html>
