@@ -26,8 +26,6 @@ var r = document.querySelector(':root');
 var s = document.querySelector('#loading');
 var screenY = window.innerHeight;
 console.log(screenY);
-// var l = document.getElementsByClassName("ff-powered-img")[0];
-// console.log(l);
 
 function myFunction_get() {
   var rs = getComputedStyle(r);
@@ -37,6 +35,7 @@ function myFunction_get() {
 function myFunction_set() {
   r.style.setProperty('--ff-font-color', 'white');
   r.style.setProperty('--ff-primary-color', '#404040');
+  r.style.setProperty('--ff-field-bgcolor', '#262626');
   s.style.setProperty('height', screenY);
 
 };
