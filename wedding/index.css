@@ -1,0 +1,41 @@
+body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: auto 0;
+}
+
+#wedding {
+  height: 100%;
+  background-color: white;
+}
+
+#party {
+  height: 50%;
+  background-color: black;
+}
+
+.sketch {
+  position: relative;
+  height: 100%; 
+  max-height: 1000px;
+}
+
+.panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loading {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background-color: white;
+}
+
+#logo {
+  max-width: 300px;
+}
