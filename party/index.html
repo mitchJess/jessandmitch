@@ -30,6 +30,7 @@ function changeDisplay() {
   var y = document.getElementsByClassName('ff-powered-img');
   for(i = 0; i < y.length; i++) {
     y[i].style.display = 'none';
+    console.log("hidden!");
   }
 }
 
@@ -49,7 +50,7 @@ function myFunction_set() {
 myFunction_set();
 
 window.addEventListener('load', function () {
- changeDisplay();
+ setTimeout(changeDisplay, 2000);
 });
 
 
