@@ -1,33 +1,38 @@
 body {
   position: absolute;
-  height: 100%;
+  /*height: 100%;*/
   width: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
   margin: auto 0;
+  color: white;
+}
+
+#rsvp {
+  padding-top: 50px;
+  background-color: white;
+  padding: 50px;
 }
 
 #wedding {
+  position: relative;
+  width: 100%;
   height: 100%;
   background-color: white;
-}
-
-#party {
-  height: 50%;
-  background-color: black;
+  padding-top: 80px;
+  padding-bottom: 50px;
 }
 
 .sketch {
   position: relative;
-  height: 100%; 
-  max-height: 1000px;
-  padding-left: 50px;
-  padding-right: 50px;
+  width: 80%; 
+  max-width: 800px;
 }
 
 .panel {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
 #loading {
@@ -41,3 +46,32 @@ body {
 #logo {
   max-width: 300px;
 }
+
+#ff-compose {
+  color: black;
+  background-color: white;
+  padding-bottom: 100px;
+}
+
+h3 {
+  justify-content: center;
+  color: black;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  display: none;
+}
+
+a {
+  color: gold;
+}
+
+#ff-title-root {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#ff-success {
+  text-align: center;
+  width: 100%;
+}
+
