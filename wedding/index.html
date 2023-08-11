@@ -4,56 +4,59 @@
     <title>Jess & Mitch</title>
     <link rel="stylesheet" type="text/css" href="index.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   </head>
 <body>
  <div id="loading" class="panel">
    <img id="logo" src="img/logo.png"></img>
  </div>
+ 
  <div class="panel" id="wedding">
-   <img class="sketch" src="img/weddingAnim.gif"></img>
+   <img class="sketch" src="img/sealRocksMap.jpg"></img>
  </div>
- <div class="panel" id="rsvp">
-    <div id="ff-compose"></div>
-<script async defer src="https://formfacade.com/include/116297907885606959139/form/1FAIpQLSebaVi3HyoCaxFleaXOMnDKLjwnByuNz3avaQ_7N3qqGH3sjw/classic.js?div=ff-compose"></script>
+ 
+ <div id="legendPanel">
+   <img id="legend" src="img/mapLegend.png"></img>
+ </div>
+
+<div id="bodyText">
+  <div id="title">
+    <img id="titleImage" src="img/weddingTitle.png"></img>
+  </div>
+  <div id="openingText">
+    <h3>DETAILS</h3>
+    <p>Together with their families and closest of friends, Jess and Mitch are getting hitched &#10024; <br><br>Please join us at Seal Rocks Lighthouse on the mid-north coast of NSW for a small ceremony and an intimate evening on <st>Saturday, September the 2nd.<st><br><br>Ceremony will commence at <st>2:30pm at Sugarloaf Point reserve<st> underneath the lighthouse, followed by drinks, dinner, and dancing at the keeper’s cottage. <st>Dress code is black tie<st>, and as this is a night under the stars, please dress warm - the weather can get pretty wild.</p>
+  </div>
+  <div id="openingText">
+    <h3>TIMES</h3>
+    <p>As Sugarload Point Lighthouse is part of NSW National Parks, there are a few important things to note:</p>
+    <ul class="list">
+    <li>There is effectively no reception! That's right, your phone will not have Google Maps, and is now effectively just a camera. Please download a PDF copy of this page if you are unsure of navigating the single path to the lighthouse at this link.</li><li>Car access past the public carpark (location dot 1) is restricted to lighthouse guests only. As you have all indicated you'll be staying close by, we wolid suggest either walking directly from your accomodation to the carpark, or parking your car here to pick up in the morning. Both options involve then walking the 800m on foot to the lighthouse. There will be lighting and signage to guide you along the way.</li>
+    <li>As you'll be walking, consider your shoes.</li>
+    </ul>
+  </div>
+  <div id="openingText">
+    <h3>A NOTE ON GIFTS</h3>
+    <p>The most important thing to us is that you are able to celebrate with us, on our special day. We appreciate, deeply, the distances that so many of you have travelled for us.<br><br>
+    Should you wish to help us celebrate with a gift, a wishing well has been set up at the below link. It will go to a much loved piece of furniture for our home.
+    </p>
+    <div class="inTextImage">
+      <img id="usm" src="img/usm.png"></img>
+    </div>
+    <div class="inTextImage">
+      <a href="https://app.collectionpot.com/pot/3137429/"><button class="button">Wishing Well</button></a>
+    </div>
+    <p>
+      <br><br>
+    </p>
+</div>
 
 <script>
 
 $("#loading").delay(3000).fadeOut(2200);
 
 // Get the root element
-var r = document.querySelector(':root');
-var s = document.querySelector('#loading');
-var screenY = window.innerHeight;
-
-function changeDisplay() {
-  var y = document.getElementsByClassName('ff-powered-img');
-  for(i = 0; i < y.length; i++) {
-    y[i].style.display = 'none';
-    console.log("hidden!");
-  }
-}
-
-function myFunction_get() {
-  var rs = getComputedStyle(r);
-  alert("The value of --ff-font-color is: " + rs.getPropertyValue('--ff-font-color'));
-}
-
-function myFunction_set() {
-  r.style.setProperty('--ff-font-color', 'black');
-  r.style.setProperty('--ff-primary-color', 'black');
-  r.style.setProperty('--ff-field-bgcolor', '#E6E6E6');
-  s.style.setProperty('height', screenY);
-
-};
-
-myFunction_set();
-
-window.addEventListener('load', function () {
- setTimeout(changeDisplay, 2000);
-});
+var screenY = window.outerHeight;
 
 
 </script>
