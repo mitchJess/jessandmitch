@@ -4,53 +4,80 @@
     <title>Jess & Mitch</title>
     <link rel="stylesheet" type="text/css" href="index.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   </head>
 <body>
  <div id="loading" class="panel">
    <img id="logo" src="img/logo.png"></img>
  </div>
- <div class="panel" id="party">
-   <img class="sketch" src="img/partyAnim.GIF"></img>
+ 
+ <div class="panel" id="wedding">
+   <img class="sketch" src="img/partyAnim.gif"></img>
  </div>
- <div class="panel" id="rsvp">
-    <div id="ff-compose"></div>
-<script async defer src="https://formfacade.com/include/116297907885606959139/form/1FAIpQLSc2ot_ZcPSfrFppQj3mC1UD8c_Gs89w4eH0gu2r-w8JoQXVPg/classic.js?div=ff-compose"></script>
+ <!-- 
+ <div id="legendPanel">
+   <img id="legend" src="img/mapLegend.png"></img>
+ </div> -->
+
+<div id="bodyText">
+  <div id="title">
+    <img id="titleImage" src="img/weddingTitle.png"></img>
+  </div>
+  <div id="openingText">
+    <h3></h3>
+    <p>Till death do us party &#128128;<br><br>Hey lovers, the time is getting closer to our special party, and we are beyond excited to be seeing you soon!<br><br>
+
+    Following a small ceremony with our families on the mid-north coast the week prior, we will be hosting a wedding party at Mitch's family home at<u>19 Harley Road, North Avalon</u> on <u>Saturday, September 9th 2023</u>. Arrive at <u>5pm, and stay till late.</u></p>
+
+    <div class="inTextImage">
+      <img id="usm" src="img/usmWhite.png"></img>
+    </div>
+
+    <p>The dress code is cocktail, and as this is a night under the stars, please dress warm. Stilettos will need to be left at home - no gal like to sink into grass mid-conversation.<br><br>
+
+    The bride and groom will arrive at <u>5:45pm</u>, so fill your glasses ready for a toast, wear your best dancing shoes, and we'll see you there &#129293</p>
+    
+
+    <p><i>As we get closer to the day, please re-check this page for any questions you might have. We will continue updating the event info here.</i></p>
+  </div>
+  <div id="openingText">
+    <h3>BUS INFO</h3>
+    <p>The bus was a very popular option and is now full. Based on your responses, we have locked in two pick-up and drop-off stops:</p>
+    <ul class="list">
+    <li><u>Sydney CBD</u><br>Departing <u>3:30pm sharp.</u> Bus zone at Eddy Ave, Central Station. We suggest you arriving 15 minutes earlier so you can locate the bus. If you are having any issues, please contact bus boss lady Melissa Beal on <u>0432 856 833</u>.
+    </li>
+    <li><u>Manly Vale</u><br>Departing <u>4:15pm</u> from Condamine St, just north of Dan Murphies. Time is approximate as the bus is travelling through Saturday afternoon Military Road traffic &#128128; If it's running late, we suggest getting a roadie from Dans and chill. If you are having any issues, please contact Manly Vale bus boss Zoe Ingram on <u>0403 607 333</u>. She will have real time information on the bus' ETA.
+    </li>
+    </ul>
+    <div class="inTextImage">
+      <img id="usm" src="img/usmWhite.png"></img>
+    </div>
+  </div>
+  <div id="openingText">
+    <h3>A NOTE ON GIFTS</h3>
+    <p>The most important thing to us is that you are able to be here to celebrate with us on this special eve. We appreciate, deeply, the distances that so many of you have travelled to be here.<br><br>
+    Should you wish to help us celebrate with a gift, a wishing well has been set up at the below link. It will go to a much loved piece of furniture for our home.
+    </p>
+    <div class="inTextImage">
+      <img id="usm" src="img/usmWhite.png"></img>
+    </div>
+    <div class="inTextImage">
+      <a href="https://app.collectionpot.com/pot/3137429/" target="_blank"><button class="button">Wishing Well</button></a>
+    </div>
+    <p>
+      <br>
+    </p>
+</div>
+<div id="openingText" style="text-align: center;">
+    <p><b>Love,<br>Mitch & Jess<b><br>&#129293</p><br><br><br>  
+</div>
 
 <script>
 
 $("#loading").delay(3000).fadeOut(2200);
 
 // Get the root element
-var r = document.querySelector(':root');
-var s = document.querySelector('#loading');
-var screenY = window.innerHeight;
-
-function changeDisplay() {
-  var y = document.getElementsByClassName('ff-powered-img');
-  for(i = 0; i < y.length; i++) {
-    y[i].style.display = 'none';
-    console.log("hidden!");
-  }
-}
-
-function myFunction_get() {
-  var rs = getComputedStyle(r);
-  alert("The value of --ff-font-color is: " + rs.getPropertyValue('--ff-font-color'));
-}
-
-function myFunction_set() {
-  r.style.setProperty('--ff-font-color', 'white');
-  r.style.setProperty('--ff-primary-color', '#B2B2B2');
-  r.style.setProperty('--ff-field-bgcolor', '#262626');
-  s.style.setProperty('height', screenY);
-
-};
-
-myFunction_set();
-
-window.addEventListener('load', function () {
- setTimeout(changeDisplay, 2000);
-});
+var screenY = window.outerHeight;
 
 
 </script>

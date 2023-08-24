@@ -1,44 +1,90 @@
+
 body {
-  position: absolute;
-  /*height: 100%;*/
-  width: 100%;
-  /*overflow: hidden;*/
-  margin: auto 0;
-  color: black;
-}
-
-#rsvp {
-  padding-top: 50px;
+  margin: 0;
+  width: 100%
   background-color: black;
-  padding: 50px;
 }
 
-#party {
+#wedding {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 83%;
+  object-fit: cover;
+  display: flex;
+  overflow-x: hidden;
+  overflow: hidden;
+  align-items: center;
+  object-position: center;
   background-color: black;
-  padding-top: 50px;
 }
 
 .sketch {
   position: relative;
   width: 80%; 
+  min-width: 600px;
   max-width: 800px;
+  transform: translateY(20px);
 }
+
+
+#legendPanel {
+  z-index:2;
+  display: block;
+  position: absolute;
+  top:0px;
+  left:0px;
+}
+
+#legend {
+  max-width: 270px;
+}
+
+.inTextImage {
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  padding-top: 30px;
+}
+
+#usm {
+  max-width: 800px;
+  width: 90%;
+}
+
+#bodyText {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+#title {
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  width: 100%;
+  padding-top: 40px;
+  background-color: black;
+}
+
+#titleImage {
+  height: 50px;
+}
+
 
 .panel {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
 }
 
 #loading {
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: 2;
+  z-index: 5;
   background-color: black;
 }
 
@@ -46,29 +92,72 @@ body {
   max-width: 300px;
 }
 
-#ff-compose {
-  color: white;
-  background-color: black;
-  padding-bottom: 100px;
+#openingText{
+  max-width: 600px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 h3 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-size: 0.9em;
+  letter-spacing: 0.15em;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-size: 0.8em;
   justify-content: center;
   color: white;
-  display: none;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+}
+
+li {
+  font-size: 0.8em;
+  justify-content: center;
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  padding-bottom: 5px;
 }
 
 a {
-  color: gold;
+  color: #E3BC22; 
 }
 
-#ff-title-root {
+.button {
+  background-color: #000000;
+  border: 2px;
+  border-style: solid;
+  border-color: white;
+  color: white;
+  padding: 8px 17px;
   text-align: center;
-  padding-bottom: 10px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
 }
 
-#ff-success {
-  text-align: center;
-  width: 100%;
+.button:hover {
+  background-color: white;
+  border: 2px;
+  border-style: solid;
+  border-color: white;
+  color: black;
 }
 
+.inlineImage {
+  max-width: 18px;
+  transform: translateY(4px);
+}
