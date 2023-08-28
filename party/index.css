@@ -128,7 +128,7 @@ li {
 }
 
 a {
-  color: #E3BC22; 
+  color: #C8A727; 
 }
 
 .button {
@@ -160,4 +160,8 @@ a {
 .inlineImage {
   max-width: 18px;
   transform: translateY(4px);
+}
+
+u {
+  color: #C8A727;
 }
